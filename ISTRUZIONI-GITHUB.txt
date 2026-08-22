@@ -1,0 +1,25 @@
+CARTELLONE TEATRI — PUBBLICAZIONE SU GITHUB PAGES
+
+1. Crea su GitHub un nuovo repository pubblico, ad esempio: cartellone-teatri-milano
+2. Apri il repository e usa Add file > Upload files.
+3. Carica TUTTI i file contenuti in questa cartella direttamente nella root del repository:
+   - index.html
+   - manifest.webmanifest
+   - sw.js
+   - icon-192.png
+   - icon-512.png
+   - icon-180.png
+   - .nojekyll
+4. Fai Commit changes.
+5. Vai in Settings > Pages.
+6. In Build and deployment scegli Source: Deploy from a branch.
+7. Branch: main; cartella: /(root); quindi Save.
+8. Quando GitHub mostra l'indirizzo del sito, aprilo con Chrome sul telefono.
+9. In Chrome usa il menu ⋮ > Installa app (o Aggiungi a schermata Home, se proposto così).
+
+NOTA IMPORTANTE
+Non aprire index.html direttamente dal file manager per installarlo: la PWA va aperta dall'indirizzo HTTPS di GitHub Pages.
+Dopo il primo caricamento completo, il calendario può aprirsi anche offline; i link esterni a teatri e biglietterie richiedono invece Internet.
+
+AGGIORNAMENTI FUTURI
+Se sostituisci index.html su GitHub con una nuova versione, quando l'app è online il service worker recupera la versione aggiornata. Dopo il caricamento, le modifiche rimangono disponibili anche offline.
